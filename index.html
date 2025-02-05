@@ -3,21 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata Iin Sholihin</title>
+    <title>Biodata Rizki Febriyan</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; padding: 20px; }
-        .container { max-width: 600px; margin: auto; background: white; padding: 20px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); border-radius: 10px; }
-        h1 { color: #007bff; }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 500px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #333;
+            margin: 10px 0;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #e52e71;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(229, 46, 113, 0.3);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Biodata</h1>
-        <p><strong>Nama:</strong> Rizki Febriyan </p>
-        <p><strong>Profesi:</strong> Web Developer</p>
+        <p><strong>Nama:</strong> <span class="highlight">Rizki Febriyan</span></p>
+        <p><strong>Profesi:</strong> <span class="highlight">Web Developer</span></p>
         <p><strong>Alamat:</strong> Jatinangor, Sumedang</p>
         <p><strong>Hobi:</strong> Coding, Reading, Hiking, Gaming</p>
-        <p><strong>Cita-cita:</strong> International Trainer</p>
+        <p><strong>Cita-cita:</strong> <span class="highlight">International Trainer</span></p>
+        <a href="https://github.com/" class="btn">Lihat Profil GitHub</a>
     </div>
 </body>
 </html>
